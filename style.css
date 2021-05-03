@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica, sans-serif;
+}
+
+body {
+  background-color: #ff6b81;
+  color: white;
+}
+
+header {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+li {
+  list-style: none;
+  width: 120px;
+  height: 70px;
+  background-color: #2ed573;
+  display: inline-block;
+}
+
+li:nth-of-type(odd):hover {
+  background-color: #7bed9f;
+  cursor: pointer;
+}
+
+li:nth-of-type(even) {
+  background-color: #1e90ff;
+}
+
+li:nth-of-type(even):hover {
+  background-color: #70a1ff;
+  cursor: pointer;
+}
+
+a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h1:hover, p:hover {
+  cursor: default;
+}
+
+h1 {
+  color: #3742fa;
+  color: #7bed9f;
+}
+
+p {
+  color: #3742fa;
+}
+
+
+.welcome {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+
+.welcome p {
+  margin-top: 16px;
+}
+
+img {
+  width: 80%;
+  margin-top: 32px;
+  max-width: 500px;
+}
+
+@media only screen and (min-width: 624px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .welcome p {
+    font-size: 1.3rem;
+  }
+}
+
+
+#main-catalog {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  width: 100%;
+}
+
+.table-container {
+  width: 80%;
+  max-width: 608px;
+}
+
+@media only screen and (max-width: 472px) {
+  .table-container {
+    width: 100%;
+  }
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px;
+}
+
+thead th {
+  padding-bottom: 10px;
+  color: #7bed9f;
+}
+
+tbody td {
+  padding: 6px 0;
+}
+
+tbody td:nth-child(1), thead th:nth-child(1) {
+  padding-left: 8px;
+}
+
+tbody td:nth-last-child(1), thead th:nth-last-child(1) {
+  padding-right: 8px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(175, 175, 175, 0.4);
+}
+
+tbody td, thead th {
+  text-align: left;
+}
